@@ -1,0 +1,35 @@
+# datasets
+datasets: office31
+num_class: 31
+data_dir: /home/mr_menand/datasets/office31
+
+# Backbone
+model_name: ViT-B/16
+
+# Optimizer related
+lr: 3e-6
+weight_decay: 5e-4
+momentum: 0.9
+label_smoothing: 0.1
+batch_size: 32
+
+
+# Loss related
+lambda1: 0.25
+lambda2: 0.1
+lambda3: 0.025
+
+# scheduler related
+scheduler: True
+lr_gamma: 0.0003
+lr_decay: 0.75
+multiple_lr_classifier: 1000
+
+# Training related
+max_iter: 10000
+eval_every: 500
+
+# Others
+seed: 2024
+num_workers: 8
+
